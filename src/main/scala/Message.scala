@@ -1,10 +1,10 @@
 final case class Message(proposition: String,
-                         profileId: String,
-                         userType: String,
-                         householdId: String,
+                         profile_id: String,
+                         user_type: String,
+                         household_id: String,
                          provider: String,
-                         providerTerritory: String,
-                         countryCode: String,
-                         activityTimestamp: String)
+                         provider_territory: String,
+                         country_code: String,
+                         activity_timestamp: String)
 
 
