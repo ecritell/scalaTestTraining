@@ -27,6 +27,7 @@ trait UtilityMethodForTest {
   def trasformObjectToOriginalJson(message: Message): String = {
 
     val json =
+
         ("activityTimestamp" -> message.activity_timestamp) ~
         ("userType" -> message.user_type) ~
         ("provider" -> message.provider) ~
@@ -52,7 +53,6 @@ trait UtilityMethodForTest {
         ("profile_id" -> message.profile_id) ~
         ("household_id" -> message.profile_id) ~
         ("country_code" -> message.country_code)
-
 
     message.profile_id + "|" + deleteFieldsWithNullValueInJson( compact(render(json)) )
   }
