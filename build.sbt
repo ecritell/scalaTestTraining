@@ -9,12 +9,13 @@ lazy val commonSettings = Seq(
 
 resolvers ++= Seq(
   "cloudera" at "https://repository.cloudera.com/artifactory/cloudera-repos/",
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
-  "Hortonworks" at "http://repo.hortonworks.com/content/repositories/releases/",
-  "Hortonworks Groups" at "http://repo.hortonworks.com/content/groups/public/",
-  "Apache Snapshots" at "https://repository.apache.org/content/repositories/releases/",
-  "JBoss" at "https://repository.jboss.org",
+  "Artima Maven Repository" at "http://repo.artima.com/releases",
   "confluent" at "http://packages.confluent.io/maven/"
+  //"Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
+  //"Hortonworks" at "http://repo.hortonworks.com/content/repositories/releases/",
+  //"Hortonworks Groups" at "http://repo.hortonworks.com/content/groups/public/",
+  //"Apache Snapshots" at "https://repository.apache.org/content/repositories/releases/",
+  //"JBoss" at "https://repository.jboss.org"
 )
 
 fork in Test := true
